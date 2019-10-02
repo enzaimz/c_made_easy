@@ -16,4 +16,9 @@
 
 
 ## Keeping the project updated
-
+```
+git fetch upstream
+git rebase upstream/master
+git push -f origin master
+```
+Note: make sure that "master" is your current branch
