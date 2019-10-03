@@ -33,7 +33,9 @@
     `git remote add upstream https://github.com/enzaimz/c_made_easy`
  
 <li> Having problem in setting up the project 
-  go through this: https://flutter.dev/docs/get-started/install
+  
+  go through this: 
+  https://flutter.dev/docs/get-started/install
 </ul>
 
 
