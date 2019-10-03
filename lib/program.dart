@@ -1,3 +1,4 @@
+import 'package:c_syntax/arrayprogram.dart';
 import 'package:c_syntax/assignment.dart';
 import 'package:c_syntax/even.dart';
 import 'package:c_syntax/factorial.dart';
@@ -185,6 +186,17 @@ class Program extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context)=> Variables()),
+                );
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: Text("Program on Array"),
+              onTap: (){
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context)=> ArrayProgram()),
                 );
               },
             ),
