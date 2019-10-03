@@ -91,6 +91,46 @@ class Array extends StatelessWidget {
               ),
             ),
           ),
+          Card(
+            child: new Container(
+              padding: EdgeInsets.fromLTRB(2.0, 5.0, 2.0, 10.0),
+              child:ListTile(
+                title: new RichText(
+                  text: TextSpan(
+                    style: new TextStyle(
+                      fontSize: 18.0,                    
+                    ),
+                    children: <TextSpan>[                    
+                      new TextSpan(
+                        text: "Accessing Array Elements",
+                        style: new TextStyle(
+                          fontWeight: FontWeight.w300,
+                        ),
+                      ),
+                      new TextSpan(
+                        text: "\n",
+                        style: new TextStyle(
+                          fontWeight: FontWeight.normal,                          
+                        ),                      
+                      ),  
+                      new TextSpan(
+                        text:"if you want to store 100 integers, you can create an array for it.",
+                        style:new TextStyle(
+                          fontWeight: FontWeight.w200,
+                        ),
+                      ),  
+                      new TextSpan(
+                        text: "\n\nint data[100];",
+                        style: new TextStyle(
+                          fontWeight: FontWeight.w200,
+                        ),
+                      ),                                      
+                    ],
+                  ),
+                ),
+              ),
+            ),
+          ),
           SizedBox(
             height: 110.0,
           )
