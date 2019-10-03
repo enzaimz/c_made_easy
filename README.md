@@ -7,12 +7,36 @@
 </p>
 
 ## Prerequisite
-
+<ul>  
+<li> Flutter
+  
+  It can be installed from:
+  https://storage.googleapis.com/flutter_infra/releases/stable/linux/flutter_linux_v1.9.1+hotfix.4-stable.tar.xz
+  
+<li> VS Code or any other editor.
 
 ## Setting up the Project
+<ul>  
+<li> Forking the Repository
+<li> Cloning
+  
+  <p> You can clone the repo in your local system using following command : </p> 
+  
+    `git clone https://github.com/user-name/GMsys.git`
+    
+  Note: Replace "user-name" with your Github username.
+     
+<li> Setting Upstream
+     
+    `git remote add upstream https://github.com/harry-hov/GMsys.git`
+    
+</ul>
 
 
 ## Running project locally
+To run the project,
+1. Open the project directory in the editor.
+2. click o Debug.
 
 
 ## Keeping the project updated
