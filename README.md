@@ -6,6 +6,7 @@
   <h4 align="center">A Flutter based Android App</h4>
 </p>
 
+
 ## Prerequisite
 <ul>  
 <li> Flutter
@@ -14,6 +15,7 @@
   https://storage.googleapis.com/flutter_infra/releases/stable/linux/flutter_linux_v1.9.1+hotfix.4-stable.tar.xz
   
 <li> VS Code or any other editor.
+  
 
 ## Setting up the Project
 <ul>  
@@ -22,7 +24,7 @@
   
   <p> You can clone the repo in your local system using following command : </p> 
   
-    `git clone https://github.com/user-name/GMsys.git`
+    `git clone https://github.com/user-name/c_made_easy`
     
   Note: Replace "user-name" with your Github username.
      
