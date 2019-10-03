@@ -28,7 +28,7 @@
      
 <li> Setting Upstream
      
-    `git remote add upstream https://github.com/harry-hov/GMsys.git`
+    `git remote add upstream https://github.com/enzaimz/c_made_easy`
     
 </ul>
 
