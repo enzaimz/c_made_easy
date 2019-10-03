@@ -42,8 +42,8 @@
 
 ## Running project locally
 To run the project,
-1. Open the project directory in the editor.
-2. click o Debug.
+<li> Open the project directory in the editor. 
+<li> Click on Debug.
 
 
 ## Keeping the project updated
