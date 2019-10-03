@@ -1,4 +1,4 @@
-<h1 align="center"> C Programming Made Easy </h1>
+<h1 align="center"> C Made Easy </h1>
 <p align="center">
   <a href="https://github.com/enzaimz/c_made_easy/blob/master/assets/icon.png">
     <img src="https://github.com/enzaimz/c_made_easy/blob/master/assets/icon.png" align="center" height="150" width="150">
@@ -31,8 +31,11 @@
 <li> Setting Upstream
      
     `git remote add upstream https://github.com/enzaimz/c_made_easy`
-    
+ 
+<li> Having problem in setting up the project 
+  go through this: https://flutter.dev/docs/get-started/install
 </ul>
+
 
 
 ## Running project locally
