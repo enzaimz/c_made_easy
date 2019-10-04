@@ -7,16 +7,20 @@
 </p>
 
 
-## Prerequisites
+## Prerequisite
 
 - **Flutter**
   - Follow the instructions in the [Flutter docs](https://flutter.dev/docs/get-started/install) according to your OS.
   
 - **Visual Studio Code** or any other editor with Flutter support.
   - VS Code is [available here.](https://code.visualstudio.com/#alt-downloads)
-  
 
-## Setting up the project
+- **Android Studio** installed [available here.](https://developer.android.com/studio).
+
+## Setting up Development Environment 
+To set-up the development environment follow instructions given [here.](https://flutter.dev/docs/get-started/install)
+
+## Setting up the Project
 
 - Fork the repository. Click the "**Fork**" button in the top right of the page.
 - Clone the repository:
