@@ -16,6 +16,7 @@ import 'package:c_syntax/variables.dart';
 import 'package:flutter/material.dart';
 import 'package:c_syntax/hello.dart';
 import 'package:c_syntax/fibonacci.dart';
+import 'package:c_syntax/ternary.dart';
 
 
 class Program extends StatelessWidget {
@@ -65,6 +66,17 @@ class Program extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context)=> Logical()),
+                );
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: Text("Ternary Operator"),
+              onTap: (){
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context)=> TernaryOperator()),
                 );
               },
             ),
