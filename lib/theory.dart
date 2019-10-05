@@ -10,6 +10,7 @@ import 'package:c_syntax/controlBasic.dart';
 import 'package:c_syntax/ifelse.dart';
 import 'package:c_syntax/inputOutput.dart';
 import 'package:c_syntax/looping.dart';
+import 'package:c_syntax/switchcase.dart';
 
 class Theory extends StatelessWidget {
   @override
@@ -74,7 +75,7 @@ class Theory extends StatelessWidget {
           ),
           Card(
             child: ListTile(
-              title: Text("6. if else"),
+              title: Text("6. if..else"),
               onTap: (){
                 Navigator.push(
                   context,
@@ -85,18 +86,29 @@ class Theory extends StatelessWidget {
           ),
           Card(
             child: ListTile(
-              title: Text("7. ControlStatements"),
+              title: Text("7. Control Statements"),
+              onTap: (){
+                Navigator.push(
+                  context, 
+                  MaterialPageRoute(builder: (context) =>  ControlStatements()),
+                  );
+              },
+            ), 
+          ),
+          Card(
+            child: ListTile(
+              title: Text("8. switch..case"),
               onTap: (){
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => ControlStatements()),
+                  MaterialPageRoute(builder: (context) => SwitchCase()),
                 );
               },
             ),
           ),
           Card(
             child: ListTile(
-              title: Text("8. Looping"),
+              title: Text("9. Looping"),
               onTap: (){
                 Navigator.push(
                   context,
@@ -107,7 +119,7 @@ class Theory extends StatelessWidget {
           ),
           Card(
             child: ListTile(
-              title: Text("9. Array"),
+              title: Text("10. Array"),
               onTap: (){
                 Navigator.push(
                   context,
@@ -118,7 +130,7 @@ class Theory extends StatelessWidget {
           ),
           Card(
             child: ListTile(
-              title: Text("10. Functions"),
+              title: Text("11. Functions"),
               onTap: (){
                 Navigator.push(
                   context,
