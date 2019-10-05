@@ -6,7 +6,7 @@ class Ifelse extends StatelessWidget{
    Widget build(BuildContext context){
     return Scaffold(
       appBar: AppBar(
-        title: Text("if else"),
+        title: Text("if..else                       "),
       ),
       body: ListView(
         children: <Widget>[
