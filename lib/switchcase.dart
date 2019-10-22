@@ -51,7 +51,7 @@ class SwitchCase extends StatelessWidget{
                         )
                       ),
                       new TextSpan(
-                        text: "\nThe Switch statement is similar to if..else statement but more easier to read",
+                        text: "\nA switch statement tests the value of a variable and compares it with multiple cases. Once the case match is found, a block of statements associated with that particular case is executed.Each case in a block of a switch has a different name/number which is referred to as an identifier. The value provided by the user is compared with all the cases inside the switch block until the match is found.If a case match is found, then the default statement is executed, and the control goes out of the switch block.",
                         style: new TextStyle(
                           fontWeight: FontWeight.w300
                         )
