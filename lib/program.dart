@@ -1,22 +1,23 @@
-import 'package:c_syntax/arrayprogram.dart';
-import 'package:c_syntax/assignment.dart';
-import 'package:c_syntax/even.dart';
-import 'package:c_syntax/factorial.dart';
-import 'package:c_syntax/functionss.dart';
-import 'package:c_syntax/greatest.dart';
-import 'package:c_syntax/increment.dart';
-import 'package:c_syntax/leap.dart';
-import 'package:c_syntax/logical.dart';
-import 'package:c_syntax/palindrome.dart';
-import 'package:c_syntax/positive.dart';
-import 'package:c_syntax/prime.dart';
-import 'package:c_syntax/reverse.dart';
-import 'package:c_syntax/swap.dart';
-import 'package:c_syntax/variables.dart';
 import 'package:flutter/material.dart';
-import 'package:c_syntax/hello.dart';
-import 'package:c_syntax/fibonacci.dart';
-import 'package:c_syntax/ternary.dart';
+
+import './programs/arrayprogram.dart';
+import './programs/assignment.dart';
+import './programs/even.dart';
+import './programs/factorial.dart';
+import './programs/functionss.dart';
+import './programs/greatest.dart';
+import './programs/increment.dart';
+import './programs/leap.dart';
+import './programs/logical.dart';
+import './programs/palindrome.dart';
+import './programs/positive.dart';
+import './programs/prime.dart';
+import './programs/reverse.dart';
+import './programs/swap.dart';
+import './programs/variables.dart';
+import './programs/hello.dart';
+import './programs/fibonacci.dart';
+import './programs/ternary.dart';
 
 
 class Program extends StatelessWidget {
