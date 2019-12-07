@@ -6,6 +6,31 @@
   <h4 align="center">A Flutter-based Android App</h4>
 </p>
 
+The app is a complete free handbook of Basics of C Programming language which covers important topics, notes & programs on the course. Download the App as a reference material for Computer Science & software Engineering programs & Degree courses.
+
+C programming is a powerful general-purpose language. If you are new to programming then C Programming is the best language to start your programming journey. In practical C programming is used in Embedded stuff, Systems Programming.
+
+## Features
+* [x] Android (iOS Coming Soon)
+
+  * [x] Contains all basic concepts of 'C' programming language (C Language).
+  * [x] C programs with comments for better understanding (300+ programs)
+  * [x] Very smooth User Interface
+  * [x] 
+  * [x] Beautiful UI with multiple themes(Coming Soon)
+ 
+  
+  ### Show some :heart: and star the repo to support the project
+  
+  ### Screenshots
+  
+  <img src="assets/ss1.webp" height="333em" /> <img src="assets/ss2.webp" height="333em" /> <img src="assets/ss3.webp" height="333em" /> 
+  
+  ## iOS
+
+### Alert: iOS implementation
+
+This project is not implemented for ios yet. So wait for it or if you can contribute then please do help.
 
 ## Prerequisite
 
@@ -50,3 +75,10 @@ git push -f origin master
 ```
 
 *Note: make sure that "master" is your current branch*
+
+## Getting Started
+
+For help getting started with Flutter, view our online
+[documentation](http://flutter.io/).
+
+For help on editing plugin code, view the [documentation](https://flutter.io/platform-plugins/#edit-code).
