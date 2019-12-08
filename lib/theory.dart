@@ -1,16 +1,16 @@
-import 'package:c_syntax/function.dart';
-import 'package:c_syntax/operator.dart';
-import 'package:c_syntax/variable.dart';
 import 'package:flutter/material.dart';
 
-import 'package:c_syntax/array.dart';
-import 'package:c_syntax/basic.dart';
-import 'package:c_syntax/comment.dart';
-import 'package:c_syntax/controlBasic.dart';
-import 'package:c_syntax/ifelse.dart';
-import 'package:c_syntax/inputOutput.dart';
-import 'package:c_syntax/looping.dart';
-import 'package:c_syntax/switchcase.dart';
+import './theory/function.dart';
+import './theory/operator.dart';
+import './theory/variable.dart';
+import './theory/array.dart';
+import './theory/basic.dart';
+import './theory/comment.dart';
+import './theory/controlBasic.dart';
+import './theory/ifelse.dart';
+import './theory/inputOutput.dart';
+import './theory/looping.dart';
+import './theory/switchcase.dart';
 
 class Theory extends StatelessWidget {
   @override
@@ -20,7 +20,7 @@ class Theory extends StatelessWidget {
         children: <Widget>[
           Card(
             child: ListTile(
-              title: Text("1. Basic of c"),
+              title: Text("1. Basic of C"),
               onTap: (){
                 Navigator.push(
                   context,
@@ -29,7 +29,7 @@ class Theory extends StatelessWidget {
               },
             ),
           ),
-            Card(
+          Card(
             child: ListTile(
               title: Text("2. Comments"),
               onTap: (){
@@ -137,7 +137,7 @@ class Theory extends StatelessWidget {
                   MaterialPageRoute(builder: (context) => Functions()),
                 );
               },
-            ),          
+            ),
           ),
           
           SizedBox(

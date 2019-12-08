@@ -1,4 +1,4 @@
-import 'package:c_syntax/functionss.dart';
+import '../programs/functionss.dart';
 import 'package:flutter/material.dart';
 
 class Functions extends StatelessWidget{  

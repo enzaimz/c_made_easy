@@ -1,5 +1,7 @@
-import 'package:c_syntax/variables.dart';
 import 'package:flutter/material.dart';
+
+import '../programs/variables.dart';
+
 
 class Variable extends StatelessWidget {
   @override
