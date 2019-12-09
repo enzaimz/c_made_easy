@@ -15,7 +15,8 @@ class Functionss extends StatelessWidget {
 
 const String _markdownData = """
 ## Program for implementing function
-```#include <stdio.h> 
+```
+#include <stdio.h> 
 void fun(int x) 
 { 
 x = 30; 

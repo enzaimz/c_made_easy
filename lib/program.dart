@@ -18,6 +18,7 @@ import './programs/variables.dart';
 import './programs/hello.dart';
 import './programs/fibonacci.dart';
 import './programs/ternary.dart';
+import './programs/structure_p.dart';
 
 
 class Program extends StatelessWidget {
@@ -225,6 +226,19 @@ class Program extends StatelessWidget {
               },
             ),
           ),
+
+          Card(
+            child: ListTile(
+              title: Text("Program on Structures"),
+              onTap: (){
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context)=> StructureProgram()),
+                );
+              },
+            ),
+          ),
+
           SizedBox(
             height: 110.0,
           )  

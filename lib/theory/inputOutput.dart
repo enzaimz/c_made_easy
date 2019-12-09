@@ -89,11 +89,11 @@ class InputOutput extends StatelessWidget {
                           fontWeight: FontWeight.w200,
                         )
                       ),
-                      new TextSpan(text: "\n\nExample",
+                      /*new TextSpan(text: "\n\nExample",
                         style: new TextStyle(
                           fontWeight: FontWeight.w300,
                         )
-                      ),
+                      ),*/
                     ],
                   ),
                 ),
