@@ -2,7 +2,7 @@
 - issue goes here
 
 # Proposed changes
-- chnage 1
+- change 1
 - change 2
 
 # Additional Info
