@@ -12,26 +12,27 @@
 - **Flutter**
   - Follow the instructions in the [Flutter docs](https://flutter.dev/docs/get-started/install) according to your OS.
   
-- **Visual Studio Code** or any other editor with Flutter support.
+- **Visual Studio Code** or any other editor supporting flutter.
   - VS Code is [available here.](https://code.visualstudio.com/#alt-downloads)
 
-- **Android Studio** installed [available here.](https://developer.android.com/studio).
+- **Android Studio** install [available here.](https://developer.android.com/studio).
 
 ## Setting up Development Environment 
-To set-up the development environment follow instructions given [here.](https://flutter.dev/docs/get-started/install)
+To set-up the development environment refer [here.](https://flutter.dev/docs/get-started/install)
 
 ## Setting up the Project
 
 - Fork the repository. Click the "**Fork**" button in the top right of the page.
 - Clone the repository:
-  - You can clone the repo to your machine using the following command:
+  - You can clone the repo to your machine using the command listed below:
     ```bash
     git clone https://github.com/user-name/c_made_easy
     ```
     *Note: Replace "user-name" with your Github username.*
      
 - Add the upstream remote:   
-  - ```bash
+  - You can use the command listed below:
+  ```bash
     git remote add upstream https://github.com/enzaimz/c_made_easy
     ```
 
@@ -46,7 +47,7 @@ To update your local copy to the latest upstream commit, run the following comma
 ```bash
 git fetch upstream
 git rebase upstream/master
-git push -f origin master
+git push origin master --force
 ```
 
 *Note: make sure that "master" is your current branch*
