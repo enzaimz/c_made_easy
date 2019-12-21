@@ -11,6 +11,7 @@ import './theory/ifelse.dart';
 import './theory/inputOutput.dart';
 import './theory/looping.dart';
 import './theory/switchcase.dart';
+import './theory/structure_t.dart';
 
 class Theory extends StatelessWidget {
   @override
@@ -140,6 +141,18 @@ class Theory extends StatelessWidget {
             ),
           ),
           
+          Card(
+            child: ListTile(
+              title: Text("12. Structures"),
+              onTap: (){
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Structure()),
+                );
+              },
+            ),
+          ),
+
           SizedBox(
             height: 110.0,
           )
