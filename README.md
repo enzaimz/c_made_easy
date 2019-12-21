@@ -14,9 +14,8 @@ C programming is a powerful general-purpose language. If you are new to programm
 * [x] Android (iOS Coming Soon)
 
   * [x] Contains all basic concepts of 'C' programming language (C Language).
-  * [x] C programs with comments for better understanding (300+ programs)
+  * [x] C programs with comments for better understanding
   * [x] Very smooth User Interface
-  * [x] 
   * [x] Beautiful UI with multiple themes(Coming Soon)
  
   
@@ -75,10 +74,3 @@ git push -f origin master
 ```
 
 *Note: make sure that "master" is your current branch*
-
-## Getting Started
-
-For help getting started with Flutter, view our online
-[documentation](http://flutter.io/).
-
-For help on editing plugin code, view the [documentation](https://flutter.io/platform-plugins/#edit-code).
