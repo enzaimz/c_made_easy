@@ -6,17 +6,16 @@
   <h4 align="center">A Flutter-based Android App</h4>
 </p>
 
-The app is a complete free handbook of Basics of C Programming language which covers important topics, notes & programs on the course. Download the App as a reference material for Computer Science & software Engineering programs & Degree courses.
+This app is a complete free handbook of Basics of C Programming language which covers important topics, notes & programs on the course. Download the App as a reference material for Computer Science, Software Engineering programs & Degree courses.
 
-C programming is a powerful general-purpose language. If you are new to programming then C Programming is the best language to start your programming journey. In practical C programming is used in Embedded stuff, Systems Programming.
+C programming is a powerful general-purpose language. If you are new to programming then C Programming is the best language to start your programming journey. In practical C programming is used in Embedded Systems, Systems Programming, Graphic Packages.
 
 ## Features
-* [x] Android (iOS Coming Soon)
-
-  * [x] Contains all basic concepts of 'C' programming language (C Language).
-  * [x] C programs with comments for better understanding
-  * [x] Very smooth User Interface
-  * [x] Beautiful UI with multiple themes(Coming Soon)
+  - Android (iOS Coming Soon)
+  - Contains all basic concepts of 'C' programming language (C Language).
+  - C programs with comments for better understanding
+  - Very smooth User Interface
+  - Beautiful UI with multiple themes(Coming Soon)
  
   
   ### Show some :heart: and star the repo to support the project
@@ -25,7 +24,7 @@ C programming is a powerful general-purpose language. If you are new to programm
   
   <img src="assets/ss1.webp" height="333em" /> <img src="assets/ss2.webp" height="333em" /> <img src="assets/ss3.webp" height="333em" /> 
   
-  ## iOS
+## iOS
 
 ### Alert: iOS implementation
 
@@ -68,10 +67,17 @@ To set-up the development environment refer [here.](https://flutter.dev/docs/get
 
 ## Keeping the project updated
 To update your local copy to the latest upstream commit, run the following commands:
+- Fetch all branches of remote upstream:
 ```bash
 git fetch upstream
+```
+- Rewrite your master with upstream’s master using git rebase:
+```base
 git rebase upstream/master
-git push origin master --force
+```
+- Push your updates to master:
+```base
+git push origin master --force or git push -f origin master
 ```
 
 *Note: make sure that "master" is your current branch*
