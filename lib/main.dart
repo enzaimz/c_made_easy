@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:c_syntax/home.dart';
+import 'splash.dart';
 
 void main() => runApp(MyApp());
 
@@ -16,7 +17,10 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         brightness: Brightness.dark,
       ),
-      home: new Home(),
+      home:  SplashScreen(),
+      routes: <String, WidgetBuilder> {
+        '/Home':(context) => new Home()
+      },
     );
   }
 }
