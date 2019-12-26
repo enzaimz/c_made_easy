@@ -53,8 +53,27 @@ flutter:
   uses-material-design: true
 
   assets:
+    - assets/icon.png
     - assets/logoWideBlack.png
     - assets/logoWideWhite.png
+    
+  fonts:
+    - family: Audiowide
+      fonts:
+        - asset: fonts/Audiowide-Regular.ttf
+          weight: 300
+    - family: Quicksand
+      fonts:
+        - asset: fonts/Quicksand-Bold.ttf
+          weight: 300
+        - asset: fonts/Quicksand-SemiBold.ttf
+          weight: 300
+        - asset: fonts/Quicksand-Light.ttf
+          weight: 300
+        - asset: fonts/Quicksand-Medium.ttf
+          weight: 300
+        - asset: fonts/Quicksand-Regular.ttf
+          weight: 300
   # To add assets to your application, add an assets section, like this:
   # assets:
   #  - images/a_dot_burr.jpeg
@@ -85,3 +104,4 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+
