@@ -1,5 +1,6 @@
 import 'dart:io';
 import 'package:c_syntax/about.dart';
+import 'package:c_syntax/contributors.dart';
 import 'package:c_syntax/program.dart';
 import 'package:c_syntax/theory.dart';
 import 'package:flutter/material.dart';
@@ -58,6 +59,16 @@ with SingleTickerProviderStateMixin{
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context)=>About()),
+                );
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.people),
+              title: Text('Contributors'),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Contributors())
                 );
               },
             ),
