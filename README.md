@@ -1,4 +1,4 @@
-<h1 align="center">C Made Easy</h1>
+<h1 align="center">C_Made_Easy</h1>
 <p align="center">
   <a href="https://github.com/enzaimz/c_made_easy/blob/master/assets/icon.png">
     <img src="https://github.com/enzaimz/c_made_easy/blob/master/assets/icon.png" align="center" height="150" width="150">
@@ -6,19 +6,19 @@
   <h4 align="center">A Flutter-based Android App</h4>
 </p>
 
-This app is a complete free handbook of Basics of C Programming language which covers important topics, notes & programs on the course. Download the App as a reference material for Computer Science, Software Engineering programs & Degree courses.
+This app is a complete free handbook for learning Basics of C Programming language which covers important topics, notes & programs on the course. Download the App as a reference material for Computer Science, Software Engineering programs & Degree courses.
 
-C programming is a powerful general-purpose language. If you are new to programming then C Programming is the best language to start your programming journey. In practical C programming is used in Embedded Systems, Systems Programming, Graphic Packages.
+C language is a powerful general-purpose programming language. If you are new to programming then C language is the best language to start your programming journey. In practical, C programming language is used in Embedded Systems, Systems Programming, Graphic Packages.
 
 ## Features
-  - Android (iOS Coming Soon)
-  - Contains all basic concepts of 'C' programming language (C Language).
-  - C programs with comments for better understanding
-  - Very smooth User Interface
-  - Beautiful UI with multiple themes(Coming Soon)
+  - Android (iOS Coming Soon).
+  - Contains all basic concepts of 'C' programming language.
+  - C programs with comments for better understanding.
+  - Very smooth User Interface.
+  - Beautiful UI with multiple themes(Coming Soon).
  
   
-  ### Show some :heart: and star the repo to support the project
+  ### Show some :heart: and :star: the repo to support the project.
   
   ### Screenshots
   
