@@ -10,7 +10,7 @@ This app is a complete free handbook for learning Basics of C Programming langua
 
 C language is a powerful general-purpose programming language. If you are new to programming then C language is the best language to start your programming journey. In practical, C programming language is used in Embedded Systems, Systems Programming, Graphic Packages.
 
-Link : https://gitter.im/C_Made_Easy/community?utm_source=share-link&utm_medium=link&utm_campaign=share-link
+To join our channel click [here.](https://gitter.im/C_Made_Easy/community?utm_source=share-link&utm_medium=link&utm_campaign=share-link)
 
 ## Features
   - Android (iOS Coming Soon).
