@@ -40,7 +40,7 @@ This project is not implemented for ios yet. So wait for it or if you can contri
 - **Visual Studio Code** or any other editor supporting flutter.
   - VS Code is [available here.](https://code.visualstudio.com/#alt-downloads)
 
-- **Android Studio** install [available here.](https://developer.android.com/studio).
+- **Android Studio** install [available here.](https://developer.android.com/studio)
 
 ## Setting up Development Environment 
 To set-up the development environment refer [here.](https://flutter.dev/docs/get-started/install)
@@ -82,4 +82,4 @@ git rebase upstream/master
 git push origin master --force or git push -f origin master
 ```
 
-*Note: make sure that "master" is your current branch*
+*Note: make sure that "master" is your current branch*.
