@@ -13,7 +13,6 @@ C language is a powerful general-purpose programming language. If you are new to
 To join our channel click [here.](https://gitter.im/C_Made_Easy/community?utm_source=share-link&utm_medium=link&utm_campaign=share-link)
 
 ## Features
-  - Android (iOS Coming Soon).
   - Contains all basic concepts of 'C' programming language.
   - C programs with comments for better understanding.
   - Very smooth User Interface.
@@ -26,11 +25,6 @@ To join our channel click [here.](https://gitter.im/C_Made_Easy/community?utm_so
   
   <img src="assets/ss1.webp" height="333em" /> <img src="assets/ss2.webp" height="333em" /> <img src="assets/ss3.webp" height="333em" /> 
   
-## iOS
-
-### Alert: iOS implementation
-
-This project is not implemented for ios yet. So wait for it or if you can contribute then please do help.
 
 ## Prerequisite
 
