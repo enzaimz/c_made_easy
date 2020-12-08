@@ -61,8 +61,7 @@ class About extends StatelessWidget {
           ),
           Center(
             child:Text(
-              "© enzaimz",
-              
+              "© enzaimz",  
               style: new TextStyle(
                 fontSize: 20.0,
                 fontWeight: FontWeight.w200,
@@ -74,3 +73,14 @@ class About extends StatelessWidget {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
