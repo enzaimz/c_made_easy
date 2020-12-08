@@ -57,14 +57,16 @@ class _AboutState extends State<About> {
               itemCount: names.length,
               itemBuilder: (context, index) {
                 return Card(
+  
                   child: Container(
-                    padding: EdgeInsets.all(20.0),
+                    padding: EdgeInsets.all(8.0),
                     child: Link(
-                      url: urls[index],
-                      child: Text(names[index],
-                      style: TextStyle(
-                        fontSize: 23.0
-                      ),),
+                        url: urls[index],
+                            child: ListTile(
+                          leading: Icon(Icons.account_circle),
+                          title:  Text(names[index],
+                      ),
+            ),
                     ),
                   ),
                 );
