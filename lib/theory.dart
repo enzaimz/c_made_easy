@@ -17,15 +17,15 @@ class Theory extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: ListView(        
+      body: ListView(
         children: <Widget>[
           Card(
             child: ListTile(
               title: Text("1. Basic of C"),
-              onTap: (){
+              onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context)=> Basic()),
+                  MaterialPageRoute(builder: (context) => Basic()),
                 );
               },
             ),
@@ -33,10 +33,10 @@ class Theory extends StatelessWidget {
           Card(
             child: ListTile(
               title: Text("2. Comments"),
-              onTap: (){
+              onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context)=> Comment()),
+                  MaterialPageRoute(builder: (context) => Comment()),
                 );
               },
             ),
@@ -44,10 +44,10 @@ class Theory extends StatelessWidget {
           Card(
             child: ListTile(
               title: Text("3. Input And Output"),
-              onTap: (){
+              onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context)=> InputOutput()),
+                  MaterialPageRoute(builder: (context) => InputOutput()),
                 );
               },
             ),
@@ -55,10 +55,10 @@ class Theory extends StatelessWidget {
           Card(
             child: ListTile(
               title: Text("4. Operators in C"),
-              onTap: (){
+              onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context)=> Operator()),
+                  MaterialPageRoute(builder: (context) => Operator()),
                 );
               },
             ),
@@ -66,7 +66,7 @@ class Theory extends StatelessWidget {
           Card(
             child: ListTile(
               title: Text("5. Variables"),
-              onTap: (){
+              onTap: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => Variable()),
@@ -77,7 +77,7 @@ class Theory extends StatelessWidget {
           Card(
             child: ListTile(
               title: Text("6. if..else"),
-              onTap: (){
+              onTap: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => Ifelse()),
@@ -87,19 +87,19 @@ class Theory extends StatelessWidget {
           ),
           Card(
             child: ListTile(
-              title: Text("7. Control Statements"),
-              onTap: (){
+              title: Text("7. Jump Statements"),
+              onTap: () {
                 Navigator.push(
-                  context, 
-                  MaterialPageRoute(builder: (context) =>  ControlStatements()),
-                  );
+                  context,
+                  MaterialPageRoute(builder: (context) => ControlStatements()),
+                );
               },
-            ), 
+            ),
           ),
           Card(
             child: ListTile(
               title: Text("8. switch..case"),
-              onTap: (){
+              onTap: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => SwitchCase()),
@@ -110,7 +110,7 @@ class Theory extends StatelessWidget {
           Card(
             child: ListTile(
               title: Text("9. Looping"),
-              onTap: (){
+              onTap: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => Looping()),
@@ -121,18 +121,18 @@ class Theory extends StatelessWidget {
           Card(
             child: ListTile(
               title: Text("10. Array"),
-              onTap: (){
+              onTap: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => Array()),
                 );
               },
-            ),          
+            ),
           ),
           Card(
             child: ListTile(
               title: Text("11. Functions"),
-              onTap: (){
+              onTap: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => Functions()),
@@ -140,11 +140,10 @@ class Theory extends StatelessWidget {
               },
             ),
           ),
-          
           Card(
             child: ListTile(
               title: Text("12. Structures"),
-              onTap: (){
+              onTap: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => Structure()),
@@ -152,12 +151,11 @@ class Theory extends StatelessWidget {
               },
             ),
           ),
-
           SizedBox(
             height: 110.0,
           )
         ],
-      ),      
+      ),
     );
   }
 }
