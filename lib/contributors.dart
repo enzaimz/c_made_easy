@@ -1,7 +1,6 @@
-import 'dart:convert';
-
+import 'package:c_syntax/services/contributor_services.dart';
+import 'package:c_syntax/services/global_services.dart';
 import 'package:flutter/material.dart';
-import 'package:http/http.dart';
 import 'package:link/link.dart';
 
 class Contributors extends StatefulWidget {
@@ -10,34 +9,15 @@ class Contributors extends StatefulWidget {
 }
 
 class _ContributorsState extends State<Contributors> {
-  List<String> names = [];
-  List<String> urls = [];
-  bool isLoading = true;
-
+  bool isContibutorLoading = true;
   @override
   void initState() {
     super.initState();
-    getUsername();
+        isContibutorLoading = true;
+        getContributors();
+      isContibutorLoading = false;
   }
 
-  void getUsername() async {
-    List<String> nameList = [];
-    List<String> urlList = [];
-    Response response = await get(
-        'https://api.github.com/repos/enzaimz/c_made_easy/contributors');
-    final result = jsonDecode(response.body);
-
-    for (var map in result) {
-      nameList.add(map['login']);
-      urlList.add(map['html_url']);
-    }
-
-    setState(() {
-      isLoading = false;
-      names = nameList;
-      urls = urlList;
-    });
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -45,20 +25,20 @@ class _ContributorsState extends State<Contributors> {
       appBar: AppBar(
         title: Text('Contributors'),
       ),
-      body: isLoading
+      body: isContibutorLoading
           ? Center(child: CircularProgressIndicator())
           : ListView.builder(
-              itemCount: names.length,
+              itemCount: allContributors.length,
               itemBuilder: (context, index) {
                 return Card(
                   child: Container(
                     padding: EdgeInsets.all(20.0),
                     child: Link(
-                      url: urls[index],
-                      child: Text(names[index],
-                      style: TextStyle(
-                        fontSize: 23.0
-                      ),),
+                      url: allContributors[index].url,
+                      child: Text(
+                        allContributors[index].name,
+                        style: TextStyle(fontSize: 23.0),
+                      ),
                     ),
                   ),
                 );

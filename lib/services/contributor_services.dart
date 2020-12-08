@@ -1,14 +1,16 @@
 import 'dart:convert';
-import 'package:c_syntax/global.dart';
+import 'package:c_syntax/services/global_services.dart';
 import 'package:http/http.dart';
 import 'contributor_model.dart';
-
-void getContributors() async {
-  List<Contributors> allContributors = List<Contributors>();
-  Response response = await get(contributor_url);
+Future<void> getContributors() async {
+  Response response = await get(
+      "https://api.github.com/repos/enzaimz/c_made_easy/contributors");
   final jsonData = jsonDecode(response.body);
   Contributors contri;
   for (var map in jsonData) {
-    contri = Contributors(map['login'], map['html_url']);
+    if (map != null) {
+      contri = Contributors(name: map["login"], url: map["html_url"]);
+      allContributors.add(contri);
+    }
   }
 }
