@@ -4,7 +4,6 @@ import 'package:flutter/services.dart';
 import 'package:c_syntax/home.dart';
 import 'package:provider/provider.dart';
 import 'splash.dart';
-import 'splash.dart';
 
 void main() => runApp(MyApp());
 
