@@ -2,17 +2,15 @@ import 'dart:io';
 import 'package:c_syntax/about.dart';
 import 'package:c_syntax/contributors.dart';
 import 'package:c_syntax/program.dart';
+import 'package:c_syntax/services/theme_services.dart';
 import 'package:c_syntax/theory.dart';
 import 'package:flutter/material.dart';
-import 'package:c_syntax/global.dart';
 import 'package:provider/provider.dart';
 
 class Home extends StatefulWidget {
   @override
   _HomeState createState() => _HomeState();
 }
-
-
 
 class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
   TabController _tabController;
@@ -21,7 +19,6 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
     super.initState();
     _tabController = new TabController(vsync: this, initialIndex: 0, length: 2);
   }
-
 
   @override
   Widget build(BuildContext context) {
@@ -54,19 +51,19 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                   children: [
                     Container(
                       child: Image.asset(
-                        (_themeChanger.lightDark)?'assets/logoWideBlack.png':'assets/logoWideWhite.png',
+                        (_themeChanger.lightDark)
+                            ? 'assets/logoWideBlack.png'
+                            : 'assets/logoWideWhite.png',
                       ),
                       width: 160,
                     ),
                     Switch(
                         value: _themeChanger.lightDark,
-                        onChanged: (lightDark){
-                          if(lightDark)
-                         _themeChanger.setTheme(ThemeData.light());
-                         else
-                          _themeChanger.setTheme(ThemeData.dark());
-
-
+                        onChanged: (lightDark) {
+                          if (lightDark)
+                            _themeChanger.setTheme(ThemeData.light());
+                          else
+                            _themeChanger.setTheme(ThemeData.dark());
                         })
                   ],
                 ),
