@@ -127,7 +127,7 @@ class Basic extends StatelessWidget{
                  _buildTableRow("default, if, static"),
                  _buildTableRow("while, do, int"),
                  _buildTableRow("switch, break, double"),
-                 _buildTableRow("_Packed, enum, "),
+                 _buildTableRow("_Packed, enum, boolean"),
           
               ], 
             ),
