@@ -1,4 +1,4 @@
-import 'package:c_syntax/global.dart';
+import 'package:c_syntax/services/theme_services.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:c_syntax/home.dart';
