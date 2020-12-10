@@ -136,15 +136,13 @@ class Array extends StatelessWidget {
                                 "\nThe number of values between braces { } cannot be larger than the number of elements that we declare for the array between square brackets [ ].",
                             style: TextStyle(
                               fontWeight: FontWeight.w200,
-                            )
-                        ),
+                            )),
                         TextSpan(
                             text:
                                 "\n\nIf you omit the size of the array, an array just big enough to hold the initialization is created.",
                             style: TextStyle(
                               fontWeight: FontWeight.w200,
-                            )
-                        ),
+                            )),
                         TextSpan(
                           text:
                               "\n\ndouble balance[ ] = {1000.0, 2.0, 3.4, 7.0, 50.0};",
@@ -157,16 +155,13 @@ class Array extends StatelessWidget {
                                 "\n\nFollowing is an example to assign a single element of the array −",
                             style: TextStyle(
                               fontWeight: FontWeight.w200,
-                            )
-                        ),
+                            )),
                         TextSpan(
-                          text:
-                              "\n\nbalance[4] = 50.0;",
+                          text: "\n\nbalance[4] = 50.0;",
                           style: new TextStyle(
                             fontWeight: FontWeight.w300,
                           ),
                         ),
-                      
                       ],
                     ),
                   ),
@@ -197,17 +192,86 @@ class Array extends StatelessWidget {
                             ),
                           ),
                           TextSpan(
-                          text:
-                              "\ndouble salary = balance[9];\n",
-                          style: new TextStyle(
-                            fontWeight: FontWeight.w300,
+                            text: "\ndouble salary = balance[9];\n",
+                            style: new TextStyle(
+                              fontWeight: FontWeight.w300,
+                            ),
                           ),
-                        ),
-                        TextSpan(
+                          TextSpan(
                             text:
                                 "\nThe above statement will take the 10th element from the array and assign the value to salary variable.\n",
                             style: new TextStyle(
                               fontWeight: FontWeight.w200,
+                            ),
+                          ),
+                        ]),
+                  ),
+                ),
+              ),
+            ),
+            Card(
+              child: new Container(
+                padding: EdgeInsets.fromLTRB(2.0, 5.0, 2.0, 10.0),
+                child: ListTile(
+                  title: new RichText(
+                    text: TextSpan(
+                        style: new TextStyle(
+                          fontSize: 18.0,
+                        ),
+                        children: <TextSpan>[
+                          new TextSpan(
+                            text: "Multidimensional Arrays",
+                            style: new TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          new TextSpan(
+                            text:
+                                "\nIn C, we can define multidimensional arrays in simple words as array of arrays. Data in multidimensional arrays are stored in tabular form (in row major order).",
+                            style: new TextStyle(
+                              fontWeight: FontWeight.w200,
+                            ),
+                          ),
+                        ]),
+                  ),
+                ),
+              ),
+            ),
+            Card(
+              child: new Container(
+                padding: EdgeInsets.fromLTRB(2.0, 5.0, 2.0, 10.0),
+                child: ListTile(
+                  title: new RichText(
+                    text: TextSpan(
+                        style: new TextStyle(
+                          fontSize: 18.0,
+                        ),
+                        children: <TextSpan>[
+                          new TextSpan(
+                            text: "Initializing Multi-Dimensional Arrays",
+                            style: new TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          new TextSpan(
+                            text:
+                                "\nMultidimensional arrays may be initialized by specifying bracketed values for each row.We already know, when we initialize a normal array (or you can say one dimensional array) during declaration, we need not to specify the size of it. However that’s not the case with a Multi-dimensional array, you must always specify all the dimensions even if you are specifying elements during the declaration.\n",
+                            style: new TextStyle(
+                              fontWeight: FontWeight.w200,
+                            ),
+                          ),
+                          new TextSpan(
+                            text:
+                                "\nFollowing is an array with 3 rows and each row has 4 columns.\n",
+                            style: new TextStyle(
+                              fontWeight: FontWeight.w400,
+                            ),
+                          ),
+                          new TextSpan(
+                            text:
+                                "int a[3][4] = \n{  {0, 1, 2, 3} , \n{4, 5, 6, 7} , \n{8, 9, 10, 11}};",
+                            style: new TextStyle(
+                              fontWeight: FontWeight.w300,
                             ),
                           ),
                         ]),
