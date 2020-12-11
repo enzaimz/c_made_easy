@@ -12,6 +12,7 @@ import './theory/inputOutput.dart';
 import './theory/looping.dart';
 import './theory/switchcase.dart';
 import './theory/structure_t.dart';
+import './theory/pointer.dart';
 
 class Theory extends StatelessWidget {
   @override
@@ -147,6 +148,17 @@ class Theory extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => Structure()),
+                );
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: Text("12. Pointers"),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Pointer()),
                 );
               },
             ),
