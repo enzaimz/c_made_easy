@@ -1,4 +1,5 @@
 import 'package:c_syntax/services/theme_services.dart';
+import 'package:c_syntax/theory/ifelse.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:c_syntax/home.dart';
@@ -29,7 +30,7 @@ class CMadeEasy extends StatelessWidget {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'C Made Easy',
-      home: SplashScreen(),
+      home: Ifelse(),
       theme: theme.getTheme(),
         routes: <String, WidgetBuilder>{'/Home': (context) => new Home()},
     );
