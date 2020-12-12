@@ -2,6 +2,22 @@ import 'package:flutter/material.dart';
 
 class Ifelse extends StatelessWidget{
 
+  String ifStatement='\nif';
+  String ifDes='\nThe if statement evaluates the test expression inside the parenthesis';
+  String ifSnippet='if ( test Expression )\n{\n\t\t\t\t// statements to be executed if the \n\t\t\t\ttest expression is true\n}';
+
+  String ifelseStatement='\nif else';
+  String ifelseDes='\nIf the test expression is evaluated to true, statements inside the body of if are executed and statements inside the body of else are skipped from execution.\n\nIf the test expression is evaluated to false,statements inside the body of else are executed statements inside the body of if are skipped from execution.\n ';
+  String ifelseSnippet='if ( test Expression )\n{\n\t\t\t\t// statements to be executed if the \n\t\t\t\ttest expression is true\n}\n\nelse\n{\n\t\t\t\t// statements to be executed if the \n\t\t\t\ttest expression is false\n}';
+
+  String nifStatement='\nNested if else';
+  String nifelseDes='\nIf the test expression 1 is evaluated to true,statements inside the body of outer if are executed,followed by the inner if statement.\n\nIf the test expression 2 of inner if statement evaluates to true,the statements inside it are executed. Statements inside the body of outer and inner else are skipped from execution.\n\nIf the test expression 2 is evaluated to false,statements inside the body of inner else are executed and statements inside the body of inner else and  outer else are skipped from execution.\n\nIf the test expression 1 evaluates to false then both inner if and else statements are skipped and only outer else statements are evaluated.  ';
+  String nifelseSnippet='if ( test Expression 1 )\n{\n\t\t\t\tif( test expression 2 )\n\t\t\t\t{\n\t\t\t\t// statements under inner if to be\n\t\t\t\t executed.\n\t\t\t\t}\n\n\t\t\t\telse\n\t\t\t\t{\n\t\t\t\t//statements to be executed if the test \n\t\t\t\t expression 2 evaluates to false.\n\t\t\t\t}\n}\n\nelse\n{\n\t\t\t// statements to be executed if the \n\t\t\t\ttest expression 1 is false.\n}';
+
+  String lifStatement='\nif-else Ladder ';
+  String lifelseDes='\nAs soon as one of the conditions controlling the if is true, the statement associated with that if is executed, and the rest of the C else-if ladder is bypassed.\n\nIf none of the conditions are true, then the final else statement will be executed.';
+  String lifelseSnippet='if ( condition )\n\t\t\t//statements to be executed;\n\nelse if ( condition )\n\t\t\t//statements to be executed;\n.\n.\n.\nelse\n\t\t\t//statements to be executed; ';
+
   @override
   Widget build(BuildContext context){
     return Scaffold(
@@ -10,87 +26,10 @@ class Ifelse extends StatelessWidget{
       ),
       body: ListView(
         children: <Widget>[
-          Card(
-            child: new Container(
-              padding: EdgeInsets.fromLTRB(2.0, 5.0, 2.0 ,10.0),
-            child: ListTile(
-              title: new RichText(
-                text: new TextSpan(
-                  style: new TextStyle(
-                    fontSize: 18.0,                   
-                  ),
-                  children: <TextSpan>[
-                      new TextSpan(
-                        text: "\nif",
-                        style: new TextStyle(
-                          fontWeight: FontWeight.bold
-                        )
-                      ),
-                      new TextSpan(
-                        text: '\nThe if statement evaluates the test expression inside the parenthesis' ,
-                        style: new TextStyle(
-                          fontWeight: FontWeight.w300, 
-                        )
-                      ),
-                      new TextSpan(
-                        text: "\n \n Syntax:\n ",
-                        style: new TextStyle(
-                          fontWeight: FontWeight.w200,
-                        )
-                      ),
-                      new TextSpan(text: "if ( test Expression )\n{\n\t\t\t\t// statements to be executed if the \n\t\t\t\ttest expression is true\n}",
-                      style: new TextStyle(
-                        fontWeight: FontWeight.w200,
-                      )
-                      ),
-                    ]
-                  ),
-                ),
-              ),
-            ), 
-          ),
-
-          Card(
-            child: new Container(
-              padding: EdgeInsets.fromLTRB(2.0, 5.0, 2.0 ,10.0),
-
-            child: ListTile(
-              title: new RichText(
-                text: new TextSpan(
-                  style: new TextStyle(
-                    fontSize: 18.0,
-                    
-                  ),
-                  children: <TextSpan>[
-                      new TextSpan(
-                        text: "\nif else",
-                        style: new TextStyle(
-                          fontWeight: FontWeight.bold
-                        )
-                      ),
-                      new TextSpan(
-                        text: '\nIf the test expression is evaluated to true,\n\t\t statements inside the body of if are executed. \n\t\tstatements inside the body of else are skipped from execution.\n\n If the test expression is evaluated to false, \n\t\tstatements inside the body of else are executed\n\t\t statements inside the body of if are skipped from execution.\n ' ,
-                        style: new TextStyle(
-                          fontWeight: FontWeight.w300, 
-                        )
-                      ),
-                      new TextSpan(
-                        text: "\n \n Syntax:\n ",
-                        style: new TextStyle(
-                          fontWeight: FontWeight.w200,
-                        )
-                      ),
-                      new TextSpan(text: "if ( test Expression )\n{\n\t\t\t\t// statements to be executed if the \n\t\t\t\ttest expression is true\n}\n\nelse\n{\n\t\t\t\t// statements to be executed if the \n\t\t\t\ttest expression is false\n}",
-                      style: new TextStyle(
-                        fontWeight: FontWeight.w200,
-                      )
-                      ),
-                    ]
-                  ),
-                ),
-              ), 
-            ), 
-          ),
+         InfoCard(ifStatement,ifDes,ifSnippet),
+         InfoCard(ifelseStatement,ifelseDes,ifelseSnippet),
+         InfoCard(nifStatement, nifelseDes, nifelseSnippet),
+         InfoCard(lifStatement, lifelseDes, lifelseSnippet),
           SizedBox(
             height: 110.0,
           ),
@@ -98,4 +37,47 @@ class Ifelse extends StatelessWidget{
       )  
     );
   } 
+}
+
+
+Widget InfoCard( String s1,String s2,String s3){
+  return Card(
+    child: new Container(
+      padding: EdgeInsets.fromLTRB(2.0, 5.0, 2.0 ,10.0),
+      child: ListTile(
+        title: new RichText(
+          text: new TextSpan(
+              style: new TextStyle(
+                fontSize: 18.0,
+              ),
+              children: <TextSpan>[
+                new TextSpan(
+                    text: s1,
+                    style: new TextStyle(
+                        fontWeight: FontWeight.bold
+                    )
+                ),
+                new TextSpan(
+                    text: s2 ,
+                    style: new TextStyle(
+                      fontWeight: FontWeight.w300,
+                    )
+                ),
+                new TextSpan(
+                    text: "\n \n Syntax:\n ",
+                    style: new TextStyle(
+                      fontWeight: FontWeight.w200,
+                    )
+                ),
+                new TextSpan(text: s3,
+                    style: new TextStyle(
+                      fontWeight: FontWeight.w200,
+                    )
+                ),
+              ]
+          ),
+        ),
+      ),
+    ),
+  );
 }
