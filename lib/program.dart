@@ -20,6 +20,7 @@ import './programs/fibonacci.dart';
 import './programs/ternary.dart';
 import './programs/structure_p.dart';
 import './programs/armstrong.dart';
+import './programs/decimalToBinary.dart';
 
 
 class Program extends StatelessWidget {
@@ -213,6 +214,17 @@ class Program extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context)=> Variables()),
+                );
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: Text("Convert Decimal to Binary"),
+              onTap: (){
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context)=> DecimalToBinary()),
                 );
               },
             ),
