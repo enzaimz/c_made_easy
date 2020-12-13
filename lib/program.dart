@@ -19,6 +19,7 @@ import './programs/hello.dart';
 import './programs/fibonacci.dart';
 import './programs/ternary.dart';
 import './programs/structure_p.dart';
+import './programs/armstrong.dart';
 
 
 class Program extends StatelessWidget {
@@ -138,6 +139,7 @@ class Program extends StatelessWidget {
               },
             ),
           ),
+
           Card(
             child: ListTile(
               title: Text("Greatest of Three Number"),
@@ -145,6 +147,17 @@ class Program extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context)=> Greatest()),
+                );
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: Text("Armstrong Number "),
+              onTap: (){
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context)=> Armstrong()),
                 );
               },
             ),
