@@ -20,6 +20,7 @@ import './programs/fibonacci.dart';
 import './programs/ternary.dart';
 import './programs/structure_p.dart';
 import './programs/pointer.dart';
+import './programs/string.dart';
 
 class Program extends StatelessWidget {
   @override
@@ -178,6 +179,17 @@ class Program extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => Factorial()),
+                );
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: Text("Input/Output of Strings"),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Strings()),
                 );
               },
             ),

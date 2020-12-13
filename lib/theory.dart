@@ -13,6 +13,7 @@ import './theory/looping.dart';
 import './theory/switchcase.dart';
 import './theory/structure_t.dart';
 import './theory/pointer.dart';
+import './theory/string.dart';
 
 class Theory extends StatelessWidget {
   @override
@@ -132,7 +133,18 @@ class Theory extends StatelessWidget {
           ),
           Card(
             child: ListTile(
-              title: Text("11. Functions"),
+              title: Text("11. Strings"),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => String()),
+                );
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: Text("12. Functions"),
               onTap: () {
                 Navigator.push(
                   context,
@@ -143,7 +155,7 @@ class Theory extends StatelessWidget {
           ),
           Card(
             child: ListTile(
-              title: Text("12. Structures"),
+              title: Text("13. Structures"),
               onTap: () {
                 Navigator.push(
                   context,
@@ -154,7 +166,7 @@ class Theory extends StatelessWidget {
           ),
           Card(
             child: ListTile(
-              title: Text("12. Pointers"),
+              title: Text("14. Pointers"),
               onTap: () {
                 Navigator.push(
                   context,
