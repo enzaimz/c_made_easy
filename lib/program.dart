@@ -21,6 +21,7 @@ import './programs/ternary.dart';
 import './programs/structure_p.dart';
 import './programs/armstrong.dart';
 import './programs/decimalToBinary.dart';
+import './programs/binaryToDecimal.dart';
 
 
 class Program extends StatelessWidget {
@@ -225,6 +226,17 @@ class Program extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context)=> DecimalToBinary()),
+                );
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: Text("Convert Binary to Decimal"),
+              onTap: (){
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context)=> BinaryToDecimal()),
                 );
               },
             ),
