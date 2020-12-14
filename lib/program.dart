@@ -19,8 +19,12 @@ import './programs/hello.dart';
 import './programs/fibonacci.dart';
 import './programs/ternary.dart';
 import './programs/structure_p.dart';
+import './programs/armstrong.dart';
+import './programs/decimalToBinary.dart';
+import './programs/binaryToDecimal.dart';
 import './programs/pointer.dart';
 import './programs/string.dart';
+
 
 class Program extends StatelessWidget {
   @override
@@ -139,6 +143,7 @@ class Program extends StatelessWidget {
               },
             ),
           ),
+
           Card(
             child: ListTile(
               title: Text("Greatest of Three Number"),
@@ -146,6 +151,17 @@ class Program extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => Greatest()),
+                );
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: Text("Armstrong Number "),
+              onTap: (){
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context)=> Armstrong()),
                 );
               },
             ),
@@ -212,6 +228,28 @@ class Program extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => Variables()),
+                );
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: Text("Convert Decimal to Binary"),
+              onTap: (){
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context)=> DecimalToBinary()),
+                );
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: Text("Convert Binary to Decimal"),
+              onTap: (){
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context)=> BinaryToDecimal()),
                 );
               },
             ),
