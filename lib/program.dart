@@ -24,7 +24,7 @@ import './programs/decimalToBinary.dart';
 import './programs/binaryToDecimal.dart';
 import './programs/pointer.dart';
 import './programs/string.dart';
-
+import './programs/bitwiseoperator.dart';
 
 class Program extends StatelessWidget {
   @override
@@ -90,6 +90,17 @@ class Program extends StatelessWidget {
           ),
           Card(
             child: ListTile(
+              title: Text("Bitwise Operators"),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => BitwiseOperators()),
+                );
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
               title: Text("Number is Even or Odd"),
               onTap: () {
                 Navigator.push(
@@ -143,7 +154,6 @@ class Program extends StatelessWidget {
               },
             ),
           ),
-
           Card(
             child: ListTile(
               title: Text("Greatest of Three Number"),
@@ -158,10 +168,10 @@ class Program extends StatelessWidget {
           Card(
             child: ListTile(
               title: Text("Armstrong Number "),
-              onTap: (){
+              onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context)=> Armstrong()),
+                  MaterialPageRoute(builder: (context) => Armstrong()),
                 );
               },
             ),
@@ -235,10 +245,10 @@ class Program extends StatelessWidget {
           Card(
             child: ListTile(
               title: Text("Convert Decimal to Binary"),
-              onTap: (){
+              onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context)=> DecimalToBinary()),
+                  MaterialPageRoute(builder: (context) => DecimalToBinary()),
                 );
               },
             ),
@@ -246,10 +256,10 @@ class Program extends StatelessWidget {
           Card(
             child: ListTile(
               title: Text("Convert Binary to Decimal"),
-              onTap: (){
+              onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context)=> BinaryToDecimal()),
+                  MaterialPageRoute(builder: (context) => BinaryToDecimal()),
                 );
               },
             ),
