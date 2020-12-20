@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 
 import './programs/arrayprogram.dart';
@@ -30,6 +31,8 @@ import './programs/stack.dart';
 import './programs/queue.dart';
 import './programs/graph.dart';
 import './programs/tree.dart';
+import './programs/hcf.dart';
+import 'package:c_syntax/programs/lcm.dart';
 
 class Program extends StatelessWidget {
   @override
@@ -210,6 +213,28 @@ class Program extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => Factorial()),
+                );
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: Text("HCF of two numbers"),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => HCF()),
+                );
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: Text("LCM of two numbers"),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => LCM()),
                 );
               },
             ),
