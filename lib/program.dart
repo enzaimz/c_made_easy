@@ -25,6 +25,11 @@ import './programs/binaryToDecimal.dart';
 import './programs/pointer.dart';
 import './programs/string.dart';
 import './programs/bitwiseoperator.dart';
+import './programs/linkedlist.dart';
+import './programs/stack.dart';
+import './programs/queue.dart';
+import './programs/graph.dart';
+import './programs/tree.dart';
 
 class Program extends StatelessWidget {
   @override
@@ -304,6 +309,61 @@ class Program extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => Pointers()),
+                );
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: Text("Linked Lists"),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => LinkedList()),
+                );
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: Text("Stack"),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Stacks()),
+                );
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: Text("Queue"),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Queue()),
+                );
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: Text("Graph"),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Graph()),
+                );
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: Text("Tree"),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Tree()),
                 );
               },
             ),

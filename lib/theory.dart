@@ -15,6 +15,7 @@ import './theory/structure_t.dart';
 import './theory/pointer.dart';
 import './theory/string.dart';
 import './theory/bitwiseoperator.dart';
+import './theory/datastructure.dart';
 
 class Theory extends StatelessWidget {
   @override
@@ -183,6 +184,17 @@ class Theory extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => Pointer()),
+                );
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: Text("16. Data Structures"),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => DataStructure()),
                 );
               },
             ),
