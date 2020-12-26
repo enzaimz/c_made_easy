@@ -1,8 +1,14 @@
 
 import 'package:c_syntax/programs/binarysearch.dart';
+import 'package:c_syntax/programs/bubblesort.dart';
 import 'package:c_syntax/programs/exponentialsearch.dart';
+import 'package:c_syntax/programs/heapsort.dart';
+import 'package:c_syntax/programs/insertionsort.dart';
 import 'package:c_syntax/programs/jumpsearch.dart';
 import 'package:c_syntax/programs/linearsearch.dart';
+import 'package:c_syntax/programs/mergesort.dart';
+import 'package:c_syntax/programs/quicksort.dart';
+import 'package:c_syntax/programs/selectionsort.dart';
 import 'package:flutter/material.dart';
 
 import './programs/arrayprogram.dart';
@@ -437,6 +443,72 @@ class Program extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => ExponentialSearch()),
+                );
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: Text("Bubble Sort"),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => BubbleSort()),
+                );
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: Text("Selection Sort"),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => SelectionSort()),
+                );
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: Text("Quick Sort"),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => QuickSort()),
+                );
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: Text("Merge Sort"),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => MergeSort()),
+                );
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: Text("Heap Sort"),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => HeapSort()),
+                );
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: Text("Insertion Sort"),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => InsertionSort()),
                 );
               },
             ),
