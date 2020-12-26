@@ -1,14 +1,3 @@
-
-import 'package:c_syntax/programs/binarysearch.dart';
-import 'package:c_syntax/programs/bubblesort.dart';
-import 'package:c_syntax/programs/exponentialsearch.dart';
-import 'package:c_syntax/programs/heapsort.dart';
-import 'package:c_syntax/programs/insertionsort.dart';
-import 'package:c_syntax/programs/jumpsearch.dart';
-import 'package:c_syntax/programs/linearsearch.dart';
-import 'package:c_syntax/programs/mergesort.dart';
-import 'package:c_syntax/programs/quicksort.dart';
-import 'package:c_syntax/programs/selectionsort.dart';
 import 'package:flutter/material.dart';
 
 import './programs/arrayprogram.dart';
@@ -43,6 +32,16 @@ import './programs/graph.dart';
 import './programs/tree.dart';
 import './programs/hcf.dart';
 import 'package:c_syntax/programs/lcm.dart';
+import 'package:c_syntax/programs/binarysearch.dart';
+import 'package:c_syntax/programs/bubblesort.dart';
+import 'package:c_syntax/programs/exponentialsearch.dart';
+import 'package:c_syntax/programs/heapsort.dart';
+import 'package:c_syntax/programs/insertionsort.dart';
+import 'package:c_syntax/programs/jumpsearch.dart';
+import 'package:c_syntax/programs/linearsearch.dart';
+import 'package:c_syntax/programs/mergesort.dart';
+import 'package:c_syntax/programs/quicksort.dart';
+import 'package:c_syntax/programs/selectionsort.dart';
 
 class Program extends StatelessWidget {
   @override
