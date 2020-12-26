@@ -69,10 +69,6 @@ Enter the element to search:
 62
 Element found at index 7
 
-
---b = 99
-++c = 11.500000
-++d = 99.500000
 ```
 
 """;
