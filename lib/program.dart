@@ -1,4 +1,8 @@
 
+import 'package:c_syntax/programs/binarysearch.dart';
+import 'package:c_syntax/programs/exponentialsearch.dart';
+import 'package:c_syntax/programs/jumpsearch.dart';
+import 'package:c_syntax/programs/linearsearch.dart';
 import 'package:flutter/material.dart';
 
 import './programs/arrayprogram.dart';
@@ -389,6 +393,50 @@ class Program extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => Tree()),
+                );
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: Text("Linear Search"),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => LinearSearch()),
+                );
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: Text("Binary Search"),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => BinarySearch()),
+                );
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: Text("Jump Search"),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => JumpSearch()),
+                );
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: Text("Exponential Search"),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => ExponentialSearch()),
                 );
               },
             ),
