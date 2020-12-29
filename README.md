@@ -35,7 +35,7 @@ To join our channel click [here.](https://gitter.im/C_Made_Easy/community?utm_so
   
 ## Screenshots
   
-<img src="assets/0.jpg" height="300em" /> <img src="assets/1.jpg" height="300em" /> <img src="assets/2.jpg" height="300em" /> <img src="assets/3.jpg" height="300em" /> <img src="assets/4.jpg" height="300em" /> 
+<img src="assets/0.jpg" height="260em" /> <img src="assets/1.jpg" height="260em" /> <img src="assets/2.jpg" height="260em" /> <img src="assets/3.jpg" height="260em" /> <img src="assets/4.jpg" height="260em" /> 
   
 
 ## Setting up the Development Environment 
