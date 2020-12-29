@@ -21,12 +21,24 @@ To join our channel click [here.](https://gitter.im/C_Made_Easy/community?utm_so
   
   ### Show some :heart: and :star: the repo to support the project.
   
-  ### Screenshots
-  
-  <img src="assets/0.jpg" height="333em" /> <img src="assets/1.jpg" height="333em" /> <img src="assets/2.jpg" height="333em" /> <img src="assets/3.jpg" height="333em" /> <img src="assets/4.jpg" height="333em" /> 
   
 
-## Prerequisite
+## Contribution is welcome! 🎉
+
+
+## Prerequisites☑
+- Ability to use Git and Github :octocat:
+- Basic knowledge of Dart and Flutter
+- Willingness to learn more
+- UI/UX skills are appreciable but not mandatory
+
+  
+## Screenshots
+  
+<img src="assets/0.jpg" height="333em" /> <img src="assets/1.jpg" height="333em" /> <img src="assets/2.jpg" height="333em" /> <img src="assets/3.jpg" height="333em" /> <img src="assets/4.jpg" height="333em" /> 
+  
+
+## Setting up Development Environment 
 
 - **Flutter**
   - Follow the instructions in the [Flutter docs](https://flutter.dev/docs/get-started/install) according to your OS.
@@ -36,8 +48,7 @@ To join our channel click [here.](https://gitter.im/C_Made_Easy/community?utm_so
 
 - **Android Studio** install [available here.](https://developer.android.com/studio)
 
-## Setting up Development Environment 
-To set-up the development environment refer [here.](https://flutter.dev/docs/get-started/install)
+- **To set-up the development environment refer [here.](https://flutter.dev/docs/get-started/install)
 
 ## Setting up the Project
 
@@ -77,3 +88,9 @@ git push origin master --force or git push -f origin master
 ```
 
 *Note: make sure that "master" is your current branch*.
+
+
+# Available on Google Play
+<a href="https://play.google.com/store/apps/details?id=com.enzaimz.c_syntax"><img width=20% src="https://lh3.googleusercontent.com/cjsqrWQKJQp9RFO7-hJ9AfpKzbUb_Y84vXfjlP0iRHBvladwAfXih984olktDhPnFqyZ0nu9A5jvFwOEQPXzv7hr3ce3QVsLN8kQ2Ao=s0"></p>
+
+
