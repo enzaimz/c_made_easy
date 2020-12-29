@@ -35,10 +35,10 @@ To join our channel click [here.](https://gitter.im/C_Made_Easy/community?utm_so
   
 ## Screenshots
   
-<img src="assets/0.jpg" height="333em" /> <img src="assets/1.jpg" height="333em" /> <img src="assets/2.jpg" height="333em" /> <img src="assets/3.jpg" height="333em" /> <img src="assets/4.jpg" height="333em" /> 
+<img src="assets/0.jpg" height="300em" /> <img src="assets/1.jpg" height="300em" /> <img src="assets/2.jpg" height="300em" /> <img src="assets/3.jpg" height="300em" /> <img src="assets/4.jpg" height="300em" /> 
   
 
-## Setting up Development Environment 
+## Setting up the Development Environment 
 
 - **Flutter**
   - Follow the instructions in the [Flutter docs](https://flutter.dev/docs/get-started/install) according to your OS.
@@ -48,7 +48,7 @@ To join our channel click [here.](https://gitter.im/C_Made_Easy/community?utm_so
 
 - **Android Studio** install [available here.](https://developer.android.com/studio)
 
-- **To set-up the development environment refer [here.](https://flutter.dev/docs/get-started/install)
+- To set-up the development environment refer [here.](https://flutter.dev/docs/get-started/install)
 
 ## Setting up the Project
 
