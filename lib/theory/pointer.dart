@@ -6,7 +6,7 @@ class Pointer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text("Pointers"),
+          title: Hero(tag: 'pointers',child: Text("Pointers",style: TextStyle(fontFamily: 'Audiowide',color: Color(0xFF00FF00) ),)),
         ),
         body: ListView(
           children: <Widget>[
