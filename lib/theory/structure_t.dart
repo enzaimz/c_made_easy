@@ -7,7 +7,7 @@ class Structure extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Structures in C"),
+        title: Hero(tag: 'structure',child: Text("Structures in C",style: TextStyle(fontFamily: 'Audiowide',color: Color(0xFF00FF00) ),)),
       ),
       body: ListView(
         children: <Widget>[
