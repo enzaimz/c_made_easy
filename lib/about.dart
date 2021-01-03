@@ -48,7 +48,12 @@ class _AboutState extends State<About> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('About Developers'),
+        title: Hero(
+          tag: "developer-tag",
+          child: Container(
+              child: Text('About Developers',style: TextStyle(fontFamily: 'Audiowide',color: Color(0xFF00FF00)),)
+          ),
+        ),
       ),
       body: isLoading
           ? Center(child: CircularProgressIndicator())

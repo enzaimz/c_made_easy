@@ -10,7 +10,7 @@ class DataStructure extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Data Structures"),
+        title: Hero(tag: 'ds',child: Text("Data Structures",style: TextStyle(fontFamily: 'Audiowide',color: Color(0xFF00FF00) ),)),
       ),
       body: ListView(
         children: <Widget>[

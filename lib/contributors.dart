@@ -43,7 +43,12 @@ class _ContributorsState extends State<Contributors> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Contributors'),
+        title: Hero(
+          tag: "contributor-tag",
+            child: Container
+              (child: Text('Contributors',style: TextStyle(fontFamily: 'Audiowide',color: Color(0xFF00FF00) ),),
+            )
+        ),
       ),
       body: isLoading
           ? Center(child: CircularProgressIndicator())
