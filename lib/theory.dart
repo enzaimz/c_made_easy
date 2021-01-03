@@ -12,6 +12,10 @@ import './theory/inputOutput.dart';
 import './theory/looping.dart';
 import './theory/switchcase.dart';
 import './theory/structure_t.dart';
+import './theory/pointer.dart';
+import './theory/string.dart';
+import './theory/bitwiseoperator.dart';
+import './theory/datastructure.dart';
 
 class Theory extends StatelessWidget {
   @override
@@ -65,7 +69,18 @@ class Theory extends StatelessWidget {
           ),
           Card(
             child: ListTile(
-              title: Text("5. Variables"),
+              title: Text("5. Bitwise Operators in C"),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => BitwiseOperator()),
+                );
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: Text("6. Variables"),
               onTap: () {
                 Navigator.push(
                   context,
@@ -76,7 +91,7 @@ class Theory extends StatelessWidget {
           ),
           Card(
             child: ListTile(
-              title: Text("6. if..else"),
+              title: Text("7. if..else"),
               onTap: () {
                 Navigator.push(
                   context,
@@ -87,7 +102,7 @@ class Theory extends StatelessWidget {
           ),
           Card(
             child: ListTile(
-              title: Text("7. Jump Statements"),
+              title: Text("8. Jump Statements"),
               onTap: () {
                 Navigator.push(
                   context,
@@ -98,7 +113,7 @@ class Theory extends StatelessWidget {
           ),
           Card(
             child: ListTile(
-              title: Text("8. switch..case"),
+              title: Text("9. switch..case"),
               onTap: () {
                 Navigator.push(
                   context,
@@ -109,7 +124,7 @@ class Theory extends StatelessWidget {
           ),
           Card(
             child: ListTile(
-              title: Text("9. Looping"),
+              title: Text("10. Looping"),
               onTap: () {
                 Navigator.push(
                   context,
@@ -120,7 +135,7 @@ class Theory extends StatelessWidget {
           ),
           Card(
             child: ListTile(
-              title: Text("10. Array"),
+              title: Text("11. Array"),
               onTap: () {
                 Navigator.push(
                   context,
@@ -131,7 +146,18 @@ class Theory extends StatelessWidget {
           ),
           Card(
             child: ListTile(
-              title: Text("11. Functions"),
+              title: Text("12. Strings"),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => String()),
+                );
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: Text("13. Functions"),
               onTap: () {
                 Navigator.push(
                   context,
@@ -142,11 +168,33 @@ class Theory extends StatelessWidget {
           ),
           Card(
             child: ListTile(
-              title: Text("12. Structures"),
+              title: Text("14. Structures"),
               onTap: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => Structure()),
+                );
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: Text("15. Pointers"),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Pointer()),
+                );
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: Text("16. Data Structures"),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => DataStructure()),
                 );
               },
             ),

@@ -19,7 +19,29 @@ import './programs/hello.dart';
 import './programs/fibonacci.dart';
 import './programs/ternary.dart';
 import './programs/structure_p.dart';
-
+import './programs/armstrong.dart';
+import './programs/decimalToBinary.dart';
+import './programs/binaryToDecimal.dart';
+import './programs/pointer.dart';
+import './programs/string.dart';
+import './programs/bitwiseoperator.dart';
+import './programs/linkedlist.dart';
+import './programs/stack.dart';
+import './programs/queue.dart';
+import './programs/graph.dart';
+import './programs/tree.dart';
+import './programs/hcf.dart';
+import 'package:c_syntax/programs/lcm.dart';
+import 'package:c_syntax/programs/binarysearch.dart';
+import 'package:c_syntax/programs/bubblesort.dart';
+import 'package:c_syntax/programs/exponentialsearch.dart';
+import 'package:c_syntax/programs/heapsort.dart';
+import 'package:c_syntax/programs/insertionsort.dart';
+import 'package:c_syntax/programs/jumpsearch.dart';
+import 'package:c_syntax/programs/linearsearch.dart';
+import 'package:c_syntax/programs/mergesort.dart';
+import 'package:c_syntax/programs/quicksort.dart';
+import 'package:c_syntax/programs/selectionsort.dart';
 
 class Program extends StatelessWidget {
   @override
@@ -31,10 +53,10 @@ class Program extends StatelessWidget {
           Card(
             child: ListTile(
               title: Text("Hello World"),
-              onTap: (){
+              onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context)=> Hello()),
+                  MaterialPageRoute(builder: (context) => Hello()),
                 );
               },
             ),
@@ -42,10 +64,10 @@ class Program extends StatelessWidget {
           Card(
             child: ListTile(
               title: Text("Increment and Decrement"),
-              onTap: (){
+              onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context)=> Increment()),
+                  MaterialPageRoute(builder: (context) => Increment()),
                 );
               },
             ),
@@ -53,10 +75,10 @@ class Program extends StatelessWidget {
           Card(
             child: ListTile(
               title: Text("Assignment Operator"),
-              onTap: (){
+              onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context)=> Assignment()),
+                  MaterialPageRoute(builder: (context) => Assignment()),
                 );
               },
             ),
@@ -64,10 +86,10 @@ class Program extends StatelessWidget {
           Card(
             child: ListTile(
               title: Text("Logical Operators"),
-              onTap: (){
+              onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context)=> Logical()),
+                  MaterialPageRoute(builder: (context) => Logical()),
                 );
               },
             ),
@@ -75,10 +97,21 @@ class Program extends StatelessWidget {
           Card(
             child: ListTile(
               title: Text("Ternary Operator"),
-              onTap: (){
+              onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context)=> TernaryOperator()),
+                  MaterialPageRoute(builder: (context) => TernaryOperator()),
+                );
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: Text("Bitwise Operators"),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => BitwiseOperators()),
                 );
               },
             ),
@@ -86,10 +119,10 @@ class Program extends StatelessWidget {
           Card(
             child: ListTile(
               title: Text("Number is Even or Odd"),
-              onTap: (){
+              onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context)=> Even()),
+                  MaterialPageRoute(builder: (context) => Even()),
                 );
               },
             ),
@@ -97,10 +130,10 @@ class Program extends StatelessWidget {
           Card(
             child: ListTile(
               title: Text("Number is + or -"),
-              onTap: (){
+              onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context)=> Positive()),
+                  MaterialPageRoute(builder: (context) => Positive()),
                 );
               },
             ),
@@ -108,10 +141,10 @@ class Program extends StatelessWidget {
           Card(
             child: ListTile(
               title: Text("Leap Year "),
-              onTap: (){
+              onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context)=> Leap()),
+                  MaterialPageRoute(builder: (context) => Leap()),
                 );
               },
             ),
@@ -119,10 +152,10 @@ class Program extends StatelessWidget {
           Card(
             child: ListTile(
               title: Text("Reverse a Number"),
-              onTap: (){
+              onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context)=> Reverse()),
+                  MaterialPageRoute(builder: (context) => Reverse()),
                 );
               },
             ),
@@ -130,10 +163,10 @@ class Program extends StatelessWidget {
           Card(
             child: ListTile(
               title: Text("Swap Two Numbers"),
-              onTap: (){
+              onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context)=> Swap()),
+                  MaterialPageRoute(builder: (context) => Swap()),
                 );
               },
             ),
@@ -141,10 +174,21 @@ class Program extends StatelessWidget {
           Card(
             child: ListTile(
               title: Text("Greatest of Three Number"),
-              onTap: (){
+              onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context)=> Greatest()),
+                  MaterialPageRoute(builder: (context) => Greatest()),
+                );
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: Text("Armstrong Number "),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Armstrong()),
                 );
               },
             ),
@@ -152,10 +196,10 @@ class Program extends StatelessWidget {
           Card(
             child: ListTile(
               title: Text("Fibonacci series"),
-              onTap: (){
+              onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context)=> Fibonacci()),
+                  MaterialPageRoute(builder: (context) => Fibonacci()),
                 );
               },
             ),
@@ -163,10 +207,10 @@ class Program extends StatelessWidget {
           Card(
             child: ListTile(
               title: Text("Prime Number"),
-              onTap: (){
+              onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context)=> Prime()),
+                  MaterialPageRoute(builder: (context) => Prime()),
                 );
               },
             ),
@@ -174,10 +218,43 @@ class Program extends StatelessWidget {
           Card(
             child: ListTile(
               title: Text("Factorial of a Number"),
-              onTap: (){
+              onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context)=>Factorial()),
+                  MaterialPageRoute(builder: (context) => Factorial()),
+                );
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: Text("HCF of two numbers"),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => HCF()),
+                );
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: Text("LCM of two numbers"),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => LCM()),
+                );
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: Text("Input/Output of Strings"),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Strings()),
                 );
               },
             ),
@@ -185,10 +262,10 @@ class Program extends StatelessWidget {
           Card(
             child: ListTile(
               title: Text("String is Palindrome or Not"),
-              onTap: (){
+              onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context)=> Palindrome()),
+                  MaterialPageRoute(builder: (context) => Palindrome()),
                 );
               },
             ),
@@ -196,10 +273,32 @@ class Program extends StatelessWidget {
           Card(
             child: ListTile(
               title: Text("Variables Scope"),
-              onTap: (){
+              onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context)=> Variables()),
+                  MaterialPageRoute(builder: (context) => Variables()),
+                );
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: Text("Convert Decimal to Binary"),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => DecimalToBinary()),
+                );
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: Text("Convert Binary to Decimal"),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => BinaryToDecimal()),
                 );
               },
             ),
@@ -207,10 +306,10 @@ class Program extends StatelessWidget {
           Card(
             child: ListTile(
               title: Text("Program on Array"),
-              onTap: (){
+              onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context)=> ArrayProgram()),
+                  MaterialPageRoute(builder: (context) => ArrayProgram()),
                 );
               },
             ),
@@ -218,36 +317,206 @@ class Program extends StatelessWidget {
           Card(
             child: ListTile(
               title: Text("Program on Functions"),
-              onTap: (){
+              onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context)=> Functionss()),
+                  MaterialPageRoute(builder: (context) => Functionss()),
                 );
               },
             ),
           ),
-
           Card(
             child: ListTile(
               title: Text("Program on Structures"),
-              onTap: (){
+              onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context)=> StructureProgram()),
+                  MaterialPageRoute(builder: (context) => StructureProgram()),
                 );
               },
             ),
           ),
-
+          Card(
+            child: ListTile(
+              title: Text("Swapping Two Numbers (Pointers)"),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Pointers()),
+                );
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: Text("Linked Lists"),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => LinkedList()),
+                );
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: Text("Stack"),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Stacks()),
+                );
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: Text("Queue"),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Queue()),
+                );
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: Text("Graph"),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Graph()),
+                );
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: Text("Tree"),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Tree()),
+                );
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: Text("Linear Search"),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => LinearSearch()),
+                );
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: Text("Binary Search"),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => BinarySearch()),
+                );
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: Text("Jump Search"),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => JumpSearch()),
+                );
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: Text("Exponential Search"),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => ExponentialSearch()),
+                );
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: Text("Bubble Sort"),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => BubbleSort()),
+                );
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: Text("Selection Sort"),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => SelectionSort()),
+                );
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: Text("Quick Sort"),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => QuickSort()),
+                );
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: Text("Merge Sort"),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => MergeSort()),
+                );
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: Text("Heap Sort"),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => HeapSort()),
+                );
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: Text("Insertion Sort"),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => InsertionSort()),
+                );
+              },
+            ),
+          ),
           SizedBox(
             height: 110.0,
-          )  
+          )
         ],
-      ),      
+      ),
     );
   }
 }
-
-
-
-
