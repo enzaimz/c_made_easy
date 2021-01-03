@@ -5,7 +5,7 @@ class Comment extends StatelessWidget{
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Comments"),
+        title: Hero(tag: 'comments',child: Text("Comments",style: TextStyle(fontFamily: 'Audiowide',color: Color(0xFF00FF00) ),)),
       ),
       body: ListView(
         children: <Widget>[
