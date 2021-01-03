@@ -110,6 +110,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
           ],
         ),
       ),
+      
       body: new TabBarView(
         controller: _tabController,
         children: <Widget>[
