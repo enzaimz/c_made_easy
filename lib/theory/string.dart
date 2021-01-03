@@ -6,7 +6,7 @@ class String extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Hero(tag: 'string',child: Text("Strings",style: TextStyle(fontFamily: 'Audiowide',color: Color(0xFF00FF00) ),)),
+          title: Text("Strings"),
         ),
         body: ListView(
           children: <Widget>[

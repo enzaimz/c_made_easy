@@ -5,7 +5,7 @@ class Array extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Hero(tag: 'array',child: Text("Array",style: TextStyle(fontFamily: 'Audiowide',color: Color(0xFF00FF00) ),)),
+          title: Text("Array"),
         ),
         body: ListView(
           children: <Widget>[

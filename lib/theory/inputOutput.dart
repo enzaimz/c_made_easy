@@ -5,7 +5,7 @@ class InputOutput extends StatelessWidget {
   Widget build(BuildContext context){
     return Scaffold(
       appBar: AppBar(
-        title: Hero(tag: 'io',child: Text("Input & Output",style: TextStyle(fontFamily: 'Audiowide',color: Color(0xFF00FF00) ),)),
+        title: Text("Input & Output"),
       ),
       body: ListView(
         children: <Widget>[

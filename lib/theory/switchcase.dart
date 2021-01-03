@@ -51,7 +51,7 @@ class SwitchCase extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Hero(tag: 'sc',child: Text("switch..case",style: TextStyle(fontFamily: 'Audiowide',color: Color(0xFF00FF00) ),)),
+        title: Text("switch..case"),
       ),
       body: ListView(
         children: <Widget>[

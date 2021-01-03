@@ -5,7 +5,7 @@ class Operator extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: new AppBar(
-        title: Hero(tag: 'operators',child: new Text("Operators",style: TextStyle(fontFamily: 'Audiowide',color: Color(0xFF00FF00) ),)),
+        title: new Text("ControlStatements"),
       ),      
       body: ListView(
         children: <Widget>[

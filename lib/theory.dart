@@ -12,6 +12,10 @@ import './theory/inputOutput.dart';
 import './theory/looping.dart';
 import './theory/switchcase.dart';
 import './theory/structure_t.dart';
+import './theory/pointer.dart';
+import './theory/string.dart';
+import './theory/bitwiseoperator.dart';
+import './theory/datastructure.dart';
 
 class Theory extends StatelessWidget {
   @override
@@ -21,9 +25,7 @@ class Theory extends StatelessWidget {
         children: <Widget>[
           Card(
             child: ListTile(
-              title: Hero(
-                tag: 'basics',
-                  child: Text("1. Basic of C",)),
+              title: Text("1. Basic of C"),
               onTap: () {
                 Navigator.push(
                   context,
@@ -34,8 +36,7 @@ class Theory extends StatelessWidget {
           ),
           Card(
             child: ListTile(
-              title: Hero(tag: 'comments',
-                  child: Text("2. Comments")),
+              title: Text("2. Comments"),
               onTap: () {
                 Navigator.push(
                   context,
@@ -46,9 +47,7 @@ class Theory extends StatelessWidget {
           ),
           Card(
             child: ListTile(
-              title: Hero(
-                tag: 'io',
-                  child: Text("3. Input And Output")),
+              title: Text("3. Input And Output"),
               onTap: () {
                 Navigator.push(
                   context,
@@ -59,7 +58,7 @@ class Theory extends StatelessWidget {
           ),
           Card(
             child: ListTile(
-              title: Hero(tag: 'operators',child: Text("4. Operators in C")),
+              title: Text("4. Operators in C"),
               onTap: () {
                 Navigator.push(
                   context,
@@ -70,7 +69,7 @@ class Theory extends StatelessWidget {
           ),
           Card(
             child: ListTile(
-              title: Hero(tag: 'bitwise',child: Text("5. Bitwise Operators in C")),
+              title: Text("5. Bitwise Operators in C"),
               onTap: () {
                 Navigator.push(
                   context,
@@ -81,7 +80,7 @@ class Theory extends StatelessWidget {
           ),
           Card(
             child: ListTile(
-              title: Hero(tag: 'variables',child: Text("6. Variables")),
+              title: Text("6. Variables"),
               onTap: () {
                 Navigator.push(
                   context,
@@ -92,7 +91,7 @@ class Theory extends StatelessWidget {
           ),
           Card(
             child: ListTile(
-              title: Hero(tag: 'ifelse',child: Text("7. if..else")),
+              title: Text("7. if..else"),
               onTap: () {
                 Navigator.push(
                   context,
@@ -103,7 +102,7 @@ class Theory extends StatelessWidget {
           ),
           Card(
             child: ListTile(
-              title: Hero(tag: 'jump',child: Text("8. Jump Statements")),
+              title: Text("8. Jump Statements"),
               onTap: () {
                 Navigator.push(
                   context,
@@ -114,7 +113,7 @@ class Theory extends StatelessWidget {
           ),
           Card(
             child: ListTile(
-              title: Hero(tag: 'sc',child: Text("9. switch..case")),
+              title: Text("9. switch..case"),
               onTap: () {
                 Navigator.push(
                   context,
@@ -125,7 +124,7 @@ class Theory extends StatelessWidget {
           ),
           Card(
             child: ListTile(
-              title: Hero(tag: 'loop',child: Text("10. Looping")),
+              title: Text("10. Looping"),
               onTap: () {
                 Navigator.push(
                   context,
@@ -136,7 +135,7 @@ class Theory extends StatelessWidget {
           ),
           Card(
             child: ListTile(
-              title: Hero(tag: 'array',child: Text("11. Array")),
+              title: Text("11. Array"),
               onTap: () {
                 Navigator.push(
                   context,
@@ -147,7 +146,7 @@ class Theory extends StatelessWidget {
           ),
           Card(
             child: ListTile(
-              title: Hero(tag: 'string',child: Text("12. Strings")),
+              title: Text("12. Strings"),
               onTap: () {
                 Navigator.push(
                   context,
@@ -158,7 +157,7 @@ class Theory extends StatelessWidget {
           ),
           Card(
             child: ListTile(
-              title: Hero(tag: 'function',child: Text("13. Functions")),
+              title: Text("13. Functions"),
               onTap: () {
                 Navigator.push(
                   context,
@@ -169,7 +168,7 @@ class Theory extends StatelessWidget {
           ),
           Card(
             child: ListTile(
-              title: Hero(tag: 'structure',child: Text("14. Structures")),
+              title: Text("14. Structures"),
               onTap: () {
                 Navigator.push(
                   context,
@@ -180,7 +179,7 @@ class Theory extends StatelessWidget {
           ),
           Card(
             child: ListTile(
-              title: Hero(tag: 'pointers',child: Text("15. Pointers")),
+              title: Text("15. Pointers"),
               onTap: () {
                 Navigator.push(
                   context,
@@ -191,7 +190,7 @@ class Theory extends StatelessWidget {
           ),
           Card(
             child: ListTile(
-              title: Hero(tag: 'ds',child: Text("16. Data Structures")),
+              title: Text("16. Data Structures"),
               onTap: () {
                 Navigator.push(
                   context,
