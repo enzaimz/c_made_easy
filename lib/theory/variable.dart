@@ -8,7 +8,7 @@ class Variable extends StatelessWidget {
   Widget build(BuildContext context){
     return Scaffold(
       appBar: AppBar(
-        title: Hero(tag: 'variables',child: Text("Variables",style: TextStyle(fontFamily: 'Audiowide',color: Color(0xFF00FF00) ),)),
+        title: Text("Variables"),
       ),
       body: ListView(
         children: <Widget>[

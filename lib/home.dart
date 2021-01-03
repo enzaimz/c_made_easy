@@ -74,12 +74,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
             ),
             ListTile(
               leading: Icon(Icons.help),
-              title: Hero(
-                tag: "developer-tag",
-                child: Container
-                  (child: Text("About Developer")
-                ),
-              ),
+              title: Text("About Developer"),
               onTap: () {
                 Navigator.push(
                   context,
@@ -89,12 +84,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
             ),
             ListTile(
               leading: Icon(Icons.people),
-              title: Hero(
-                tag: "contributor-tag",
-                child: Container(
-                    child: Text('Contributors')
-                ),
-              ),
+              title: Text('Contributors'),
               onTap: () {
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) => Contributors()));
@@ -110,7 +100,6 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
           ],
         ),
       ),
-      
       body: new TabBarView(
         controller: _tabController,
         children: <Widget>[

@@ -5,7 +5,7 @@ class Looping extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Hero(tag: 'loop',child: Text("Looping",style: TextStyle(fontFamily: 'Audiowide',color: Color(0xFF00FF00) ),)),
+        title: Text("Looping"),
       ),
       body: ListView(
         children: <Widget>[

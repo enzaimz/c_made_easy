@@ -6,7 +6,7 @@ class Functions extends StatelessWidget{
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Hero(tag: 'function',child: Text("Functions",style: TextStyle(fontFamily: 'Audiowide',color: Color(0xFF00FF00) ),)),
+        title: Text("Functions"),
       ),
       body: ListView(
         children: <Widget>[

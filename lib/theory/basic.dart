@@ -5,7 +5,7 @@ class Basic extends StatelessWidget{
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Hero(tag: 'basics',child: Text("Basic of C",style: TextStyle(fontFamily: 'Audiowide',color: Color(0xFF00FF00) ),)),
+        title: Text("Basic of C"),
       ),
       body: ListView(
         children: <Widget>[
