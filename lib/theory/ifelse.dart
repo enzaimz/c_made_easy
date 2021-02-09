@@ -30,16 +30,17 @@ class Ifelse extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = Provider.of<ThemeChanger>(context);
+    Color color = theme.lightDark ? Colors.black : null;
     return Scaffold(
         appBar: AppBar(
           title: Text("if..else                       "),
         ),
         body: ListView(
           children: <Widget>[
-            infoCard(ifStatement, ifDes, ifSnippet),
-            infoCard(ifelseStatement, ifelseDes, ifelseSnippet),
-            infoCard(nifStatement, nifelseDes, nifelseSnippet),
-            infoCard(lifStatement, lifelseDes, lifelseSnippet),
+            infoCard(ifStatement, ifDes, ifSnippet, color),
+            infoCard(ifelseStatement, ifelseDes, ifelseSnippet, color),
+            infoCard(nifStatement, nifelseDes, nifelseSnippet, color),
+            infoCard(lifStatement, lifelseDes, lifelseSnippet, color),
             SizedBox(
               height: 110.0,
             ),
@@ -48,7 +49,7 @@ class Ifelse extends StatelessWidget {
   }
 }
 
-infoCard(String s1, String s2, String s3) {
+infoCard(String s1, String s2, String s3, color) {
   return Card(
     child: new Container(
       padding: EdgeInsets.fromLTRB(2.0, 5.0, 2.0, 10.0),
@@ -57,6 +58,7 @@ infoCard(String s1, String s2, String s3) {
           text: new TextSpan(
               style: new TextStyle(
                 fontSize: 18.0,
+                color: color
               ),
               children: <TextSpan>[
                 new TextSpan(
