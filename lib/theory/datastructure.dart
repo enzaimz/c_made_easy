@@ -4,10 +4,13 @@ import '../programs/stack.dart';
 import '../programs/graph.dart';
 import '../programs/tree.dart';
 import 'package:flutter/material.dart';
+import 'package:c_syntax/services/theme_services.dart';
+import 'package:provider/provider.dart';
 
 class DataStructure extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    final theme = Provider.of<ThemeChanger>(context);
     return Scaffold(
       appBar: AppBar(
         title: Text("Data Structures"),
@@ -22,6 +25,8 @@ class DataStructure extends StatelessWidget {
                 text: new TextSpan(
                   style: new TextStyle(
                     fontSize: 18.0,
+
+                      color: theme.lightDark ? Colors.black : null
                   ),
                   children: <TextSpan>[
                     new TextSpan(
@@ -50,6 +55,8 @@ class DataStructure extends StatelessWidget {
                 text: new TextSpan(
                   style: new TextStyle(
                     fontSize: 18.0,
+
+                      color: theme.lightDark ? Colors.black : null
                   ),
                   children: <TextSpan>[
                     new TextSpan(
@@ -78,6 +85,8 @@ class DataStructure extends StatelessWidget {
                 text: new TextSpan(
                   style: new TextStyle(
                     fontSize: 18.0,
+
+                      color: theme.lightDark ? Colors.black : null
                   ),
                   children: <TextSpan>[
                     new TextSpan(
@@ -113,6 +122,8 @@ class DataStructure extends StatelessWidget {
                 text: new TextSpan(
                   style: new TextStyle(
                     fontSize: 18.0,
+
+                      color: theme.lightDark ? Colors.black : null
                   ),
                   children: <TextSpan>[
                     new TextSpan(
@@ -148,6 +159,8 @@ class DataStructure extends StatelessWidget {
                 text: new TextSpan(
                   style: new TextStyle(
                     fontSize: 18.0,
+
+                      color: theme.lightDark ? Colors.black : null
                   ),
                   children: <TextSpan>[
                     new TextSpan(
@@ -183,6 +196,8 @@ class DataStructure extends StatelessWidget {
                 text: new TextSpan(
                   style: new TextStyle(
                     fontSize: 18.0,
+
+                      color: theme.lightDark ? Colors.black : null
                   ),
                   children: <TextSpan>[
                     new TextSpan(
@@ -215,7 +230,8 @@ class DataStructure extends StatelessWidget {
               title: Text(
                 "click for Program on Linked Lists",
                 style:
-                    new TextStyle(fontWeight: FontWeight.bold, fontSize: 20.0),
+                    new TextStyle(fontWeight: FontWeight.bold, fontSize: 20.0,
+                        color: theme.lightDark ? Colors.black : null),
               ),
               onTap: () {
                 Navigator.push(
@@ -230,7 +246,8 @@ class DataStructure extends StatelessWidget {
               title: Text(
                 "click for Program on Stacks",
                 style:
-                    new TextStyle(fontWeight: FontWeight.bold, fontSize: 20.0),
+                    new TextStyle(fontWeight: FontWeight.bold, fontSize: 20.0,
+                        color: theme.lightDark ? Colors.black : null),
               ),
               onTap: () {
                 Navigator.push(
@@ -245,7 +262,8 @@ class DataStructure extends StatelessWidget {
               title: Text(
                 "click for Program on Queue",
                 style:
-                    new TextStyle(fontWeight: FontWeight.bold, fontSize: 20.0),
+                    new TextStyle(fontWeight: FontWeight.bold, fontSize: 20.0,
+                        color: theme.lightDark ? Colors.black : null),
               ),
               onTap: () {
                 Navigator.push(
@@ -260,7 +278,8 @@ class DataStructure extends StatelessWidget {
               title: Text(
                 "click for Program on Graphs",
                 style:
-                    new TextStyle(fontWeight: FontWeight.bold, fontSize: 20.0),
+                    new TextStyle(fontWeight: FontWeight.bold, fontSize: 20.0,
+                        color: theme.lightDark ? Colors.black : null),
               ),
               onTap: () {
                 Navigator.push(
@@ -275,7 +294,8 @@ class DataStructure extends StatelessWidget {
               title: Text(
                 "click for Program on Tree",
                 style:
-                    new TextStyle(fontWeight: FontWeight.bold, fontSize: 20.0),
+                    new TextStyle(fontWeight: FontWeight.bold, fontSize: 20.0,
+                        color: theme.lightDark ? Colors.black : null),
               ),
               onTap: () {
                 Navigator.push(
