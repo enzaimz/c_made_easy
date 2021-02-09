@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
-
+import 'package:c_syntax/services/theme_services.dart';
+import 'package:provider/provider.dart';
 import '../programs/variables.dart';
 
 
 class Variable extends StatelessWidget {
   @override
   Widget build(BuildContext context){
+    final theme = Provider.of<ThemeChanger>(context);
     return Scaffold(
       appBar: AppBar(
         title: Text("Variables"),
@@ -19,7 +21,8 @@ class Variable extends StatelessWidget {
                 title: new RichText(
                   text: TextSpan(
                     style: new TextStyle(
-                      fontSize: 18.0,                    
+                      fontSize: 18.0,
+                        color: theme.lightDark ? Colors.black : null
                     ),
                   
                     children: <TextSpan>[                    
@@ -55,7 +58,7 @@ class Variable extends StatelessWidget {
           ),
           Card(
             child: ListTile(
-              title: Text("Click for Program on Variable Scope",style: new TextStyle(fontWeight: FontWeight.bold, fontSize: 20.0),),
+              title: Text("Click for Program on Variable Scope",style: new TextStyle(fontWeight: FontWeight.bold, fontSize: 20.0, color: theme.lightDark ? Colors.black : null),),
               onTap: (){
                 Navigator.push(
                   context,

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:c_syntax/services/theme_services.dart';
+import 'package:provider/provider.dart';
 
 class SwitchCase extends StatelessWidget {
   final String switchStatementContent = """\n
@@ -49,6 +51,7 @@ class SwitchCase extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Provider.of<ThemeChanger>(context);
     return Scaffold(
       appBar: AppBar(
         title: Text("switch..case"),
@@ -61,7 +64,7 @@ class SwitchCase extends StatelessWidget {
               child: ListTile(
                 title: new RichText(
                   text: new TextSpan(
-                      style: new TextStyle(fontSize: 18.0),
+                      style: new TextStyle(fontSize: 18.0, color: theme.lightDark ? Colors.black : null),
                       children: <TextSpan>[
                         new TextSpan(
                             text: "Switch Case\n",
