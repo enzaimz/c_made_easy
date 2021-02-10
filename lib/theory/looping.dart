@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:c_syntax/services/theme_services.dart';
+import 'package:provider/provider.dart';
 
 class Looping extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    final theme = Provider.of<ThemeChanger>(context);
     return Scaffold(
       appBar: AppBar(
         title: Text("Looping"),
@@ -17,6 +20,7 @@ class Looping extends StatelessWidget {
                   text: new TextSpan(
                     style: new TextStyle(
                       fontSize: 18.0,
+                        color: theme.lightDark ? Colors.black : null
                     ),
                     children: <TextSpan>[
                       new TextSpan(
@@ -53,6 +57,7 @@ class Looping extends StatelessWidget {
                   text: new TextSpan(
                     style: new TextStyle(
                       fontSize: 18.0,
+                        color: theme.lightDark ? Colors.black : null
                     ),
                     children: <TextSpan>[
                       new TextSpan(
@@ -89,6 +94,7 @@ class Looping extends StatelessWidget {
                   text: new TextSpan(
                     style: new TextStyle(
                       fontSize: 18.0,
+                        color: theme.lightDark ? Colors.black : null
                     ),
                     children: <TextSpan>[
                       new TextSpan(

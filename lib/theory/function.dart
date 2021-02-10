@@ -1,9 +1,12 @@
 import '../programs/functionss.dart';
 import 'package:flutter/material.dart';
+import 'package:c_syntax/services/theme_services.dart';
+import 'package:provider/provider.dart';
 
-class Functions extends StatelessWidget{  
+class Functions extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
+    final theme = Provider.of<ThemeChanger>(context);
     return Scaffold(
       appBar: AppBar(
         title: Text("Functions"),
@@ -18,6 +21,8 @@ class Functions extends StatelessWidget{
                   text: new TextSpan(
                     style: new TextStyle(
                       fontSize: 18.0,
+
+                        color: theme.lightDark ? Colors.black : null
                     ),
                     children: <TextSpan>[
                       new TextSpan(
@@ -46,6 +51,8 @@ class Functions extends StatelessWidget{
                   text: new TextSpan(
                     style: new TextStyle(
                       fontSize: 18.0,
+
+                        color: theme.lightDark ? Colors.black : null
                     ),
                     children: <TextSpan>[                      
                       new TextSpan(
@@ -92,6 +99,8 @@ class Functions extends StatelessWidget{
                   text: new TextSpan(
                     style: new TextStyle(
                       fontSize: 18.0,
+
+                        color: theme.lightDark ? Colors.black : null
                     ),
                     children: <TextSpan>[                      
                       new TextSpan(
@@ -156,7 +165,8 @@ class Functions extends StatelessWidget{
           ),
           Card(
             child: ListTile(
-              title: Text("click for Program on Functions",style: new TextStyle(fontWeight: FontWeight.bold, fontSize: 20.0),),
+              title: Text("click for Program on Functions",style: new TextStyle(fontWeight: FontWeight.bold, fontSize: 20.0,
+                  color: theme.lightDark ? Colors.black : null),),
               onTap: (){
                 Navigator.push(
                   context,
